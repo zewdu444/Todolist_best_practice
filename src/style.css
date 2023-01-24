@@ -107,3 +107,8 @@ hr {
   border: none;
   background-color: white;
 }
+
+.refresh {
+  margin-top: auto;
+  margin-bottom: auto;
+}
