@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1674636239334" clover="3.2.0">
+  <project timestamp="1674636239336" name="All files">
+    <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="22" coveredelements="22" complexity="0" loc="18" ncloc="18" packages="1" files="3" classes="3"/>
+    <file name="createTask.js" path="C:\Users\HP\Desktop\module 2\zewdu_testing\Todolist_best_practice\src\module\createTask.js">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="7" count="7" type="stmt"/>
+      <line num="8" count="7" type="stmt"/>
+      <line num="9" count="7" type="stmt"/>
+      <line num="10" count="7" type="stmt"/>
+    </file>
+    <file name="deleteTask.js" path="C:\Users\HP\Desktop\module 2\zewdu_testing\Todolist_best_practice\src\module\deleteTask.js">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="10" count="5" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+    </file>
+    <file name="taskStore.js" path="C:\Users\HP\Desktop\module 2\zewdu_testing\Todolist_best_practice\src\module\taskStore.js">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>

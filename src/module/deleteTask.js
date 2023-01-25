@@ -9,6 +9,7 @@ const deleteTask = (index) => {
     tasks.push(element);
     counter += 1;
   });
+  return tasks;
 };
 
 export default deleteTask;
