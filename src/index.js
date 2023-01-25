@@ -7,6 +7,7 @@ import deleteTask from './module/deleteTask.js';
 import updateTask from './module/updateTask.js';
 import { storeTasks, getTasks } from './module/localStorage.js';
 import completeTask from './module/completeTask.js';
+import clearAllCompleted from './module/clearAllCompleted.js';
 
 const insertButton = document.getElementById('insertbutton');
 const inputTask = document.getElementById('inputtask');
@@ -104,23 +105,8 @@ list.addEventListener('click', (e) => {
 });
 
 // loop through completed tasks
-const clearSelected = () => {
-  let counter = 0;
-  for (let k = 0; k < tasks.length; k += 1) {
-    if (tasks[k].completed === true) {
-      counter += 1;
-    }
-  }
-  for (let i = 0; i < counter; i += 1) {
-    for (let j = 0; j < tasks.length; j += 1) {
-      if (tasks[j].completed === true) {
-        deleteTask(tasks[j].index);
-        storeTasks(tasks);
-      }
-    }
-  }
-};
+
 clearButton.addEventListener('click', () => {
-  clearSelected();
+  clearAllCompleted();
   dynamicDisplay();
 });
