@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <h3><b>Todo list application</b></h3>
+  <h3><b>TodoList best practice and unit test</b></h3>
 
 </div>
 
@@ -52,17 +52,17 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 TodoList application <a name="about-project"></a>
+# 📖 TodoList best practice and unit test <a name="about-project"></a>
 
-> This project is a part of Microverse in JavaScript and networking module, and it was utilized to create daily tasks, label them complete, and remove them from our task lists, it used webpack as a module bundler, and it is a minimalist web application.
+> This project is a part of Microverse in JavaScript and networking module, and it is an extension of To-do list application which used for code reviewing from coding partner to check all best practice and implemented jest test cases on javascript.
 
 ## 🛠 Built With <a name="built-with"> </a>
 
-> HTML 5 , css3, javascript ES6, NPM and webpack.
+> HTML 5 , css3, javascript ES6, NPM ,babel, webpack and jest.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> HTML 5 , css3, javascript ES6, NPM and webpack
+> HTML 5 , css3, javascript ES6, NPM ,babel, webpack and jest.
 
 <!-- Features -->
 
@@ -75,12 +75,13 @@ After you're finished please remove all the comments and instructions!
 <li>Store in local storage</li>
 <li>Strike through complete tasks</li>
 <li>Clear completed tasks </li>
+<li>Add unit test for each function</li>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p><!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> https://zewdu444.github.io/Todo_list/
+> https://zewdu444.github.io/Todolist_best_practice/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,8 +98,8 @@ to run on your localhost clone the project to local folder
 
 ### Setup
 
-> <p> git clone https://github.com/zewdu444/Todo_list.git</p>
-> cd Todo_list
+> <p> git clone https://github.com/zewdu444/Todolist_best_practice.git</p>
+> cd Todolist_best_practice
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,11 +133,16 @@ To run the project, execute the following command:
 - Twitter: [@zewdu444](https://twitter.com/zewdu444)
 - LinkedIn: [zewdu-erkyhun](https://www.linkedin.com/in/zewdu-erkyhun-081378b3/)
 
+👤 **Samuel tobby**
+
+- GitHub: [@Tobby8629](https://github.com/Tobby8629)
+- Twitter: [@Tobby_samuels](https://twitter.com/Tobby_samuels)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Improve into single page application with navigation
+> Implement Mock functionality
 
 ## 🤝 Contributing <a name="contributing"></a>
 
