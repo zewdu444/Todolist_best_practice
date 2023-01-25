@@ -4,8 +4,9 @@ import tasks from './module/taskStore.js';
 import dynamicDisplay from './module/readTask.js';
 import createTask from './module/createTask.js';
 import deleteTask from './module/deleteTask.js';
-import { updateTask, completeTask } from './module/updateTask.js';
+import updateTask from './module/updateTask.js';
 import { storeTasks, getTasks } from './module/localStorage.js';
+import completeTask from './module/completeTask.js';
 
 const insertButton = document.getElementById('insertbutton');
 const inputTask = document.getElementById('inputtask');

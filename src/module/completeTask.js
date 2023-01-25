@@ -1,9 +1,8 @@
 import tasks from './taskStore.js';
 
-const updateTask = (index, description) => {
+const completeTask = (index, completed) => {
   tasks.filter((object) => object.index === index).forEach((object) => {
-    object.description = description;
+    object.completed = completed;
   });
 };
-
-export default updateTask;
+export default completeTask;
