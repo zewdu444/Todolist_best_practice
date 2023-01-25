@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1674633363410" clover="3.2.0">
+  <project timestamp="1674633363410" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="10" coveredelements="10" complexity="0" loc="9" ncloc="9" packages="1" files="2" classes="2"/>
+    <file name="createTask.js" path="C:\Users\zewdu\Desktop\FILE\coding\microverse\module_two\Todolist_best_practice\src\module\createTask.js">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+    </file>
+    <file name="taskStore.js" path="C:\Users\zewdu\Desktop\FILE\coding\microverse\module_two\Todolist_best_practice\src\module\taskStore.js">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

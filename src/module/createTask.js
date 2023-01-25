@@ -7,6 +7,7 @@ const createTask = (description) => {
   task.completed = false;
   task.index = lastTask + 1;
   tasks.push(task);
+  return tasks;
 };
 
 export default createTask;
