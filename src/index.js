@@ -110,3 +110,4 @@ clearButton.addEventListener('click', () => {
   clearAllCompleted();
   dynamicDisplay();
 });
+export { listUpdate, inputUpdate };

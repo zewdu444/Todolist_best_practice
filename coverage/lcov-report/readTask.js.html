@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for deleteTask.js</title>
+    <title>Code coverage report for readTask.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> deleteTask.js</h1>
+        <h1><a href="index.html">All files</a> readTask.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>1/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>1/5</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -77,42 +77,51 @@
 <a name='L12'></a><a href='#L12'>12</a>
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import tasks from './taskStore.js';
 &nbsp;
-const deleteTask = (index) =&gt; {
-  const temp = tasks.filter((task) =&gt; task.index !== index);
-  tasks.length = 0;
-  let counter = 1;
-  temp.forEach((element) =&gt; {
-    element.index = counter;
-    tasks.push(element);
-    counter += 1;
+const dynamicDisplay = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+  const todoList = <span class="cstat-no" title="statement not covered" >document.querySelector('.todolist');</span>
+<span class="cstat-no" title="statement not covered" >  todoList.innerHTML = '';</span>
+<span class="cstat-no" title="statement not covered" >  tasks.forEach(<span class="fstat-no" title="function not covered" >(t</span>ask) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    todoList.innerHTML += `&lt;li id='${task.index}' class='listitem'&gt;</span>
+    &lt;input type="checkbox" class="checkcompleted" id='check${task.index}' ${task.completed ? 'checked' : 'unchecked'} /&gt;
+    &lt;p  class="textvalue" contenteditable="true" id='text${task.index}'&gt;${task.description}&lt;/p&gt;
+    &lt;button class='deletebutton'hidden id='delete${task.index}'&gt;&lt;i class="fa-solid fa-trash" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class='movebutton' id='move${task.index}'&gt;&lt;i class="fa fa-ellipsis-v todolisticon" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+    
+   &lt;/li&gt;
+   &lt;hr /&gt;`;
   });
-  return tasks;
 };
 &nbsp;
-export default deleteTask;</pre></td></tr></table></pre>
+export default dynamicDisplay;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-01-25T19:19:21.827Z
+                at 2023-01-25T18:38:34.787Z
             </div>
         <script src="prettify.js"></script>
         <script>
